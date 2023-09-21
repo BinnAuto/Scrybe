@@ -1,0 +1,20 @@
+{
+  "LoggerConfig": [
+    {
+      "ClassNamePattern": "*",
+      "DefaultLoggingLevel": "ERROR",
+      "StopScanning": false,
+      "Loggers": [
+        {
+          "Type": "ConsoleLogger"
+        },
+        {
+          "Type": "FileLogger",
+          "LoggingLevel": "ALL",
+          "LogLinePrefix": "[{H}:{m}:{s}.{f}] {n} ",
+          "FilePath": "./Logs/log.txt"
+        }
+      ]
+    }
+  ]
+}

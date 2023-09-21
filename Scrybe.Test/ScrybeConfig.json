@@ -1,0 +1,24 @@
+{
+  "LoggerConfig": [
+    {
+      "ClassNamePattern": "*",
+      "DefaultLoggingLevel": "ALL",
+      "StopScanning": false,
+      "Loggers": [
+        {
+          "Name": "Console",
+          "Type": "Console",
+          "LogLinePrefix": "[{L}] [{D} {T}] - "
+        },
+        {
+          "Name": "ErrorLog",
+          "Type": "File",
+          "FilePath": "./Logs/errlog_{y}{M}{d}",
+          "LogLinePrefix": "[{L}] [{y}/{M}/{d} {t}] - ",
+          "MaxFileDays": 10,
+          "LoggingLevel": "ERROR"
+        }
+      ]
+    }
+  ]
+}
